@@ -1,5 +1,7 @@
 # README
 
+FreeCodeCamp の Machine Learning with Python Projects の３つめの課題 [Book Recommendation Engine using KNN](https://www.freecodecamp.org/learn/machine-learning-with-python/machine-learning-with-python-projects/book-recommendation-engine-using-knn) です．
+
 ## 要件まとめ
 
 * データの可視化
