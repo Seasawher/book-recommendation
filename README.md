@@ -1,17 +1,13 @@
-# README
+# Book Recommendation Engine using KNN
 
-FreeCodeCamp の Machine Learning with Python Projects の３つめの課題 [Book Recommendation Engine using KNN](https://www.freecodecamp.org/learn/machine-learning-with-python/machine-learning-with-python-projects/book-recommendation-engine-using-knn) です．
+In this challenge, you will create a book recommendation algorithm using K-Nearest Neighbors.
 
-## 要件まとめ
+You will use the Book-Crossings dataset. This dataset contains 1.1 million ratings (scale of 1-10) of 270,000 books by 90,000 users.
 
-* データの可視化
-  * この要件はオプションで，必須ではない
-  * 可視化すると，ほとんどの本は全然評価をつけられていないことがわかる
+## Specifications
 
-* データのクリーニング
-  * データセットから 200 未満の評価しかつけていないユーザを取り除く
-  * 100 個未満の評価しかつけられていない本も取り除く
+* If you graph the dataset (optional), you will notice that most books are not rated frequently. 
 
-* `get_recommends` という名前の関数を実装する
-  * 本のタイトルを引数に受け取り，似ている本のタイトルと，その距離の組を5冊分返す関数
-  * `sklearn.neighbors` から `NearestNeighbors` を利用するとよい
+* To ensure statistical significance, remove from the dataset users with less than 200 ratings and books with less than 100 ratings.
+
+* Create a function named `get_recommends` that takes a book title (from the dataset) as an argument and returns a list of 5 similar books with their distances from the book argument.
